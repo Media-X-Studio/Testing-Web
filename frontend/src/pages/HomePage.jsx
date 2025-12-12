@@ -147,9 +147,25 @@ export const HomePage = () => {
           <div className="absolute inset-0 gradient-hero opacity-90" />
         </div>
 
+        {/* Floating Animated Shapes */}
+        <div className="floating-shape floating-shape-1 gradient-primary rounded-full animate-blob" />
+        <div className="floating-shape floating-shape-2 gradient-secondary rounded-full animate-blob" style={{ animationDelay: '2s' }} />
+        <div className="floating-shape floating-shape-3 gradient-primary rounded-full animate-blob" style={{ animationDelay: '4s' }} />
+
+        {/* Floating Icons */}
+        <div className="absolute top-20 left-10 animate-float-slow opacity-20">
+          <Shield className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute top-32 right-20 animate-float-diagonal opacity-20" style={{ animationDelay: '1s' }}>
+          <Globe className="h-20 w-20 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-32 left-20 animate-float opacity-20" style={{ animationDelay: '2s' }}>
+          <Zap className="h-12 w-12 text-primary-foreground" />
+        </div>
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <Badge className="bg-secondary text-secondary-foreground mb-4 animate-fadeInDown">
+            <Badge className="bg-secondary text-secondary-foreground mb-4 animate-fadeInDown hover-pop">
               Trusted by 50+ Government Agencies Worldwide
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight animate-fadeInUp">
@@ -160,13 +176,13 @@ export const HomePage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
               <Link to="/solutions/evisa">
-                <Button size="xl" variant="accent" className="group">
+                <Button size="xl" variant="accent" className="group hover-shine">
                   Explore Our Solutions
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="xl" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                <Button size="xl" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary hover-pop">
                   Contact Us
                 </Button>
               </Link>
