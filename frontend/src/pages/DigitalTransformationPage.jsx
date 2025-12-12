@@ -104,7 +104,9 @@ export const DigitalTransformationPage = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-24 gradient-hero overflow-hidden">
+      <section className="relative py-24 overflow-hidden">
+        {/* Two-Color Brand Background */}
+        <div className="absolute inset-0 gradient-hero" />
         {/* Digital Government Background Shapes */}
         <div className="floating-shape floating-shape-1 gradient-secondary rounded-full animate-blob" />
         <div className="floating-shape floating-shape-2 gradient-primary rounded-full animate-blob" style={{ animationDelay: '3s' }} />
