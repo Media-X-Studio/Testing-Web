@@ -354,8 +354,7 @@ metadata:
   test_status: "completed"
 
 test_plan:
-  current_focus:
-    - "Hero Section Background Image Blue Trace Fix"
+  current_focus: []
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
