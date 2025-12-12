@@ -76,20 +76,20 @@
   }
   
   .dark {
-    --background: 220 25% 8%;
-    --foreground: 210 20% 95%;
+    --background: 216 6% 10%;
+    --foreground: 0 0% 95%;
     
-    --primary: 215 75% 55%;
-    --primary-foreground: 220 25% 8%;
-    --primary-hover: 215 75% 60%;
+    --primary: 353 47% 45%;
+    --primary-foreground: 216 6% 10%;
+    --primary-hover: 353 47% 50%;
     
-    --secondary: 180 60% 55%;
-    --secondary-foreground: 220 25% 8%;
-    --secondary-hover: 180 60% 60%;
+    --secondary: 216 6% 35%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 216 6% 40%;
     
-    --accent: 180 65% 60%;
-    --accent-foreground: 220 25% 8%;
-    --accent-hover: 180 65% 65%;
+    --accent: 353 47% 50%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 353 47% 55%;
     
     --muted: 220 20% 15%;
     --muted-foreground: 215 15% 60%;
