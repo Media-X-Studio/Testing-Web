@@ -102,9 +102,21 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Test the TechAira government technology website - a multipage website with navigation, animations, forms, and responsive design"
+user_problem_statement: "Test the updated TechAira website with all the new travel, visa, and immigration-themed floating elements and background patterns that were just added."
 
 frontend:
+  - task: "Travel-Themed Floating Icons on Home Page"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/HomePage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "NEW FEATURE: Need to test 10+ travel-related floating icons (Plane, Globe, FileText, Fingerprint, CreditCard, MapPin, Building2, Briefcase, Shield, Map) with different animation patterns (float, float-slow, float-diagonal) on hero section"
+
   - task: "Home Page Navigation and Hero Section"
     implemented: true
     working: true
