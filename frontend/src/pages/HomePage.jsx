@@ -207,11 +207,14 @@ export const HomePage = () => {
               return (
                 <Card
                   key={index}
-                  className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card"
+                  className="text-center border-0 shadow-lg bg-card hover-lift hover-glow group"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardContent className="pt-6 pb-6">
-                    <Icon className="h-10 w-10 text-primary mx-auto mb-3" />
-                    <p className="text-3xl sm:text-4xl font-bold text-foreground mb-1">{stat.number}</p>
+                    <div className="mb-3 inline-block">
+                      <Icon className="h-10 w-10 text-primary group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
+                    </div>
+                    <p className="text-3xl sm:text-4xl font-bold text-foreground mb-1 group-hover:scale-110 transition-transform duration-300">{stat.number}</p>
                     <p className="text-sm text-muted-foreground">{stat.label}</p>
                   </CardContent>
                 </Card>
