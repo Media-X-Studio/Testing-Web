@@ -355,7 +355,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "TechAira Rebranding - Logo and Color Scheme Implementation"
+    - "Hero Section Background Image Blue Trace Fix"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
