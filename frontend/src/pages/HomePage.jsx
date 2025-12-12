@@ -15,7 +15,16 @@ import {
   Award,
   Clock,
   Target,
-  BarChart3
+  BarChart3,
+  Plane,
+  FileText,
+  MapPin,
+  Briefcase,
+  Fingerprint,
+  CreditCard,
+  Building2,
+  Map,
+  Landmark
 } from 'lucide-react';
 
 const stats = [
