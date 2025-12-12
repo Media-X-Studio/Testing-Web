@@ -107,8 +107,12 @@ export const AboutPage = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 relative pattern-dots">
+        {/* Floating Background Elements */}
+        <div className="absolute top-20 right-20 w-40 h-40 bg-primary/5 rounded-full blur-2xl animate-float" />
+        <div className="absolute bottom-20 left-20 w-36 h-36 bg-accent/5 rounded-full blur-2xl animate-float-diagonal" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-12">
             <Card className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-8 space-y-4">
