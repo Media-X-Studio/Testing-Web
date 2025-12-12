@@ -216,7 +216,7 @@ export const HomePage = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="xl" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary hover-pop">
+                <Button size="xl" variant="secondary" className="hover-pop">
                   Contact Us
                 </Button>
               </Link>
