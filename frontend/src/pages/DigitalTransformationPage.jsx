@@ -105,9 +105,21 @@ export const DigitalTransformationPage = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-24 gradient-hero overflow-hidden">
+        {/* Floating Animated Shapes */}
+        <div className="floating-shape floating-shape-1 gradient-secondary rounded-full animate-blob" />
+        <div className="floating-shape floating-shape-2 gradient-primary rounded-full animate-blob" style={{ animationDelay: '3s' }} />
+        
+        {/* Floating Icons */}
+        <div className="absolute top-20 right-10 animate-float-slow opacity-20">
+          <Cpu className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-20 left-10 animate-float-diagonal opacity-20">
+          <Database className="h-20 w-20 text-primary-foreground" />
+        </div>
+        
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-fadeInUp">
-            <Badge className="bg-accent text-accent-foreground">Digital Transformation</Badge>
+            <Badge className="bg-accent text-accent-foreground hover-pop cursor-pointer">Digital Transformation</Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
               The Four Pillars of Government Digital Transformation
             </h1>
