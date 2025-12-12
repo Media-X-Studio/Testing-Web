@@ -137,15 +137,18 @@ frontend:
 
   - task: "About Page and Digital Transformation"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/pages/AboutPage.jsx"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
         - agent: "testing"
         - comment: "Test mission/vision, values, leadership team sections"
+        - working: true
+        - agent: "testing"
+        - comment: "✅ About page and Digital Transformation pages working perfectly: 1) About page: Mission/vision cards, values section, leadership team with 3D flip cards (4 team members) showing bio on hover. 2) Digital Transformation page: Floating tech icons (Cpu, Database), enhanced pillar cards (4) with tilt+shine effects, comprehensive framework content, case studies. All animations and interactions working smoothly."
 
   - task: "Solutions Pages (eVisa, etc.)"
     implemented: true
