@@ -133,12 +133,16 @@ export const CustomersPage = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {clients.map((client, index) => (
-              <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+              <Card 
+                key={index} 
+                className="border-0 shadow-md hover-pop hover-shine group cursor-pointer"
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
                 <CardContent className="p-6 text-center space-y-2">
-                  <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mx-auto shadow-primary">
-                    <Globe className="h-6 w-6 text-primary-foreground" />
+                  <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mx-auto shadow-primary group-hover:shadow-xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-pulse-glow">
+                    <Globe className="h-6 w-6 text-primary-foreground group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <p className="font-semibold text-foreground">{client.name}</p>
+                  <p className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">{client.name}</p>
                   <p className="text-xs text-muted-foreground">{client.sector}</p>
                 </CardContent>
               </Card>
