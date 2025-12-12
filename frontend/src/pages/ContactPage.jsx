@@ -69,14 +69,14 @@ export const ContactPage = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-1 space-y-6">
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover-lift">
                 <CardContent className="p-6 space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center flex-shrink-0 shadow-primary">
+                  <div className="flex items-start space-x-4 group cursor-pointer hover:translate-x-2 transition-transform duration-300">
+                    <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center flex-shrink-0 shadow-primary group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 animate-pulse-glow">
                       <MapPin className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Address</h3>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors duration-300">Address</h3>
                       <p className="text-sm text-muted-foreground">
                         123 Government Plaza<br />
                         Suite 500<br />
@@ -85,34 +85,34 @@ export const ContactPage = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center flex-shrink-0 shadow-secondary">
+                  <div className="flex items-start space-x-4 group cursor-pointer hover:translate-x-2 transition-transform duration-300">
+                    <div className="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center flex-shrink-0 shadow-secondary group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 animate-pulse-glow" style={{ animationDelay: '0.5s' }}>
                       <Phone className="h-6 w-6 text-secondary-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Phone</h3>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover:text-secondary transition-colors duration-300">Phone</h3>
                       <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
                       <p className="text-sm text-muted-foreground">+1 (555) 123-4568</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center flex-shrink-0 shadow-primary">
+                  <div className="flex items-start space-x-4 group cursor-pointer hover:translate-x-2 transition-transform duration-300">
+                    <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center flex-shrink-0 shadow-primary group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 animate-pulse-glow" style={{ animationDelay: '1s' }}>
                       <Mail className="h-6 w-6 text-primary-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors duration-300">Email</h3>
                       <p className="text-sm text-muted-foreground">info@techaira.com</p>
                       <p className="text-sm text-muted-foreground">support@techaira.com</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center flex-shrink-0 shadow-secondary">
+                  <div className="flex items-start space-x-4 group cursor-pointer hover:translate-x-2 transition-transform duration-300">
+                    <div className="w-12 h-12 gradient-secondary rounded-lg flex items-center justify-center flex-shrink-0 shadow-secondary group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 animate-pulse-glow" style={{ animationDelay: '1.5s' }}>
                       <Clock className="h-6 w-6 text-secondary-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Business Hours</h3>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover:text-secondary transition-colors duration-300">Business Hours</h3>
                       <p className="text-sm text-muted-foreground">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
                       <p className="text-sm text-muted-foreground">24/7 Emergency Support Available</p>
                     </div>
