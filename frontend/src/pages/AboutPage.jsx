@@ -171,8 +171,16 @@ export const AboutPage = () => {
       </section>
 
       {/* Leadership Team */}
-      <section className="py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 relative pattern-world">
+        {/* Background Travel Icons */}
+        <div className="absolute top-16 left-1/4 animate-float-slow opacity-8">
+          <CreditCard className="h-20 w-20 text-primary/15" />
+        </div>
+        <div className="absolute bottom-16 right-1/4 animate-float-diagonal opacity-8">
+          <FileText className="h-24 w-24 text-secondary/15" />
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Badge className="bg-secondary text-secondary-foreground mb-4">Leadership</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
