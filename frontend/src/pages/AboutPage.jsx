@@ -69,9 +69,33 @@ export const AboutPage = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-24 gradient-hero overflow-hidden">
+        {/* Travel & Government Background Shapes */}
+        <div className="absolute top-20 right-10 w-48 h-48 bg-accent/10 rounded-full animate-blob blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-56 h-56 bg-secondary/10 rounded-full animate-blob blur-3xl" style={{ animationDelay: '2s' }} />
+        
+        {/* Floating Travel & Government Icons */}
+        <div className="absolute top-16 left-12 animate-float-slow opacity-15">
+          <Plane className="h-14 w-14 text-primary-foreground transform rotate-45" />
+        </div>
+        <div className="absolute top-28 right-16 animate-float-diagonal opacity-20" style={{ animationDelay: '1s' }}>
+          <Landmark className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-24 left-24 animate-float opacity-15" style={{ animationDelay: '2s' }}>
+          <Building2 className="h-18 w-18 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-32 right-20 animate-float-diagonal opacity-15" style={{ animationDelay: '3s' }}>
+          <Globe className="h-20 w-20 text-primary-foreground" />
+        </div>
+        <div className="absolute top-1/2 right-12 animate-float-slow opacity-15" style={{ animationDelay: '1.5s' }}>
+          <FileText className="h-12 w-12 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-1/3 left-1/4 animate-float opacity-15" style={{ animationDelay: '2.5s' }}>
+          <MapPin className="h-14 w-14 text-primary-foreground" />
+        </div>
+        
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-fadeInUp">
-            <Badge className="bg-accent text-accent-foreground">About TechAira</Badge>
+            <Badge className="bg-accent text-accent-foreground hover-pop cursor-pointer">About TechAira</Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
               Pioneering Government Digital Transformation Since 1999
             </h1>
