@@ -307,8 +307,16 @@ export const HomePage = () => {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-24 gradient-subtle fade-in-section">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 gradient-subtle fade-in-section relative pattern-grid">
+        {/* Additional Floating Travel Elements */}
+        <div className="absolute top-20 left-1/4 animate-float-slow opacity-10">
+          <Plane className="h-24 w-24 text-primary transform -rotate-12" />
+        </div>
+        <div className="absolute bottom-20 right-1/4 animate-float-diagonal opacity-10">
+          <Globe className="h-28 w-28 text-secondary" />
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Badge className="bg-secondary text-secondary-foreground mb-4">Our Solutions</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
