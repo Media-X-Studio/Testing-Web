@@ -146,22 +146,26 @@ export const DigitalTransformationPage = () => {
             {pillars.map((pillar, index) => {
               const Icon = pillar.icon;
               return (
-                <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group">
-                  <div className="h-2 bg-gradient-to-r from-primary to-secondary" />
+                <Card 
+                  key={index} 
+                  className="border-0 shadow-xl hover:shadow-2xl overflow-hidden group hover-tilt hover-shine cursor-pointer"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="h-2 bg-gradient-to-r from-primary to-secondary group-hover:h-3 transition-all duration-300" />
                   <CardContent className="p-8 space-y-6">
                     <div className="flex items-center space-x-4">
-                      <div className="w-16 h-16 gradient-primary rounded-xl flex items-center justify-center shadow-primary group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                        <Icon className="h-8 w-8 text-primary-foreground" />
+                      <div className="w-16 h-16 gradient-primary rounded-xl flex items-center justify-center shadow-primary group-hover:shadow-2xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-pulse-glow">
+                        <Icon className="h-8 w-8 text-primary-foreground group-hover:scale-110 transition-transform duration-300" />
                       </div>
-                      <h3 className="text-2xl font-bold text-foreground">{pillar.title}</h3>
+                      <h3 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">{pillar.title}</h3>
                     </div>
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-lg text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
                       {pillar.description}
                     </p>
                     <ul className="space-y-3">
                       {pillar.points.map((point, idx) => (
-                        <li key={idx} className="flex items-center space-x-3">
-                          <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0" />
+                        <li key={idx} className="flex items-center space-x-3 group/item hover:translate-x-2 transition-transform duration-300">
+                          <CheckCircle2 className="h-5 w-5 text-success flex-shrink-0 group-hover/item:scale-125 transition-transform duration-300" />
                           <span className="text-foreground">{point}</span>
                         </li>
                       ))}
