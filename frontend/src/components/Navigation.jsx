@@ -215,8 +215,8 @@ export const Navigation = () => {
                 variant="ghost"
                 className={cn(
                   'text-base',
-                  isScrolled ? 'text-foreground' : 'text-primary-foreground font-medium',
-                  location.pathname === '/customers' && 'text-primary'
+                  isScrolled ? 'text-foreground' : 'text-white font-medium',
+                  location.pathname === '/customers' && (isScrolled ? 'text-primary' : 'text-white')
                 )}
               >
                 Customers
