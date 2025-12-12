@@ -50,11 +50,11 @@
     --success: 145 60% 45%;
     --success-foreground: 0 0% 100%;
     
-    /* Gradients - Subtle and Professional */
-    --gradient-primary: linear-gradient(135deg, hsl(215 75% 35%) 0%, hsl(215 75% 45%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(180 60% 45%) 0%, hsl(180 65% 55%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(215 75% 30%) 0%, hsl(210 70% 40%) 50%, hsl(180 60% 45%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(215 25% 95%) 100%);
+    /* Gradients - TechAira Brand Colors */
+    --gradient-primary: linear-gradient(135deg, hsl(353 47% 28%) 0%, hsl(353 47% 35%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(216 6% 28%) 0%, hsl(216 6% 35%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(353 47% 25%) 0%, hsl(216 6% 28%) 50%, hsl(353 47% 32%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(0 0% 95%) 100%);
     
     /* Shadows - Elegant Elevation */
     --shadow-sm: 0 1px 2px 0 hsl(220 20% 15% / 0.05);
