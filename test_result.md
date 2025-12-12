@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Test the updated TechAira website with all the new travel, visa, and immigration-themed floating elements and background patterns that were just added."
+user_problem_statement: "Test the complete TechAira website rebranding with new logo and color scheme."
 
 frontend:
   - task: "Travel-Themed Floating Icons on Home Page"
