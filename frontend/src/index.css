@@ -50,10 +50,10 @@
     --success: 145 60% 45%;
     --success-foreground: 0 0% 100%;
     
-    /* Gradients - TechAira Brand Colors */
+    /* Gradients - TechAira Brand Colors (Red & Blue-Grey Only) */
     --gradient-primary: linear-gradient(135deg, hsl(353 47% 28%) 0%, hsl(353 47% 35%) 100%);
     --gradient-secondary: linear-gradient(135deg, hsl(216 6% 28%) 0%, hsl(216 6% 35%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(353 47% 25%) 0%, hsl(216 6% 28%) 50%, hsl(353 47% 32%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(353 47% 28%) 0%, hsl(216 6% 28%) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(0 0% 95%) 100%);
     
     /* Shadows - Elegant Elevation with Brand Colors */
