@@ -192,14 +192,18 @@ export const DigitalTransformationPage = () => {
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
-                <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                <Card 
+                  key={index} 
+                  className="border-0 shadow-xl hover:shadow-2xl text-center hover-lift hover-glow group cursor-pointer"
+                  style={{ animationDelay: `${index * 0.15}s` }}
+                >
                   <CardContent className="p-8 space-y-6">
-                    <div className="w-20 h-20 gradient-primary rounded-xl flex items-center justify-center mx-auto shadow-primary">
-                      <Icon className="h-10 w-10 text-primary-foreground" />
+                    <div className="w-20 h-20 gradient-primary rounded-xl flex items-center justify-center mx-auto shadow-primary group-hover:shadow-2xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-float">
+                      <Icon className="h-10 w-10 text-primary-foreground group-hover:scale-110 transition-transform duration-300" />
                     </div>
-                    <div className="text-5xl font-bold text-primary">{benefit.stat}</div>
-                    <h3 className="text-2xl font-semibold text-foreground">{benefit.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                    <div className="text-5xl font-bold text-primary group-hover:scale-125 group-hover:text-secondary transition-all duration-300">{benefit.stat}</div>
+                    <h3 className="text-2xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300">{benefit.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">{benefit.description}</p>
                   </CardContent>
                 </Card>
               );
