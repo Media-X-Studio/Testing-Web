@@ -264,9 +264,9 @@ export const AboutPage = () => {
           <Card className="border-0 shadow-2xl overflow-hidden relative">
             <div className="absolute inset-0">
               <img
-                src="https://images.unsplash.com/photo-1765121689322-6befc57dc8db?crop=entropy&cs=srgb&fm=jpg&q=85"
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
                 alt="Digital Transformation"
-                className="w-full h-full object-cover opacity-20"
+                className="w-full h-full object-cover opacity-15 grayscale"
               />
               <div className="absolute inset-0 gradient-hero opacity-95" />
             </div>
