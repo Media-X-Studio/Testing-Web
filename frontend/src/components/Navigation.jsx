@@ -95,10 +95,11 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center shadow-primary group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-              <span className="text-primary-foreground font-bold text-xl">T</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">TechAira</span>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_smooth-hover-site/artifacts/04fjefom_WhatsApp%20Image%202025-12-09%20at%206.27.57%20PM%20%281%29.png" 
+              alt="TechAira Logo" 
+              className="h-12 w-auto transition-all duration-300 group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}
