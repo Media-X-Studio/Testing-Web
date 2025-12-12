@@ -507,6 +507,19 @@
     animation: float 5s ease-in-out infinite;
   }
   
+  /* Brand Color Gradient Variations */
+  .gradient-hero-alt {
+    background: linear-gradient(180deg, hsl(353 47% 28%) 0%, hsl(216 6% 28%) 100%);
+  }
+  
+  .gradient-hero-radial {
+    background: radial-gradient(circle at top left, hsl(353 47% 28%) 0%, hsl(216 6% 28%) 100%);
+  }
+  
+  .gradient-hero-diagonal {
+    background: linear-gradient(45deg, hsl(353 47% 28%) 0%, hsl(216 6% 28%) 100%);
+  }
+  
   /* Travel & Visa Themed Patterns */
   .pattern-dots {
     background-image: radial-gradient(circle, hsl(var(--primary) / 0.1) 1px, transparent 1px);
