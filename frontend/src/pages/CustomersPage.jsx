@@ -3,7 +3,7 @@ import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, ArrowRight, Globe, Users, TrendingUp, Award } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Globe, Users, TrendingUp, Award, Plane, MapPin, FileText, Building2, Landmark, CreditCard, Fingerprint } from 'lucide-react';
 
 const clients = [
   { name: 'United Arab Emirates', sector: 'Immigration Services' },
