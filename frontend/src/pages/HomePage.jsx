@@ -368,8 +368,16 @@ export const HomePage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 fade-in-section">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 fade-in-section relative pattern-world">
+        {/* Floating Government & Travel Background */}
+        <div className="absolute top-16 right-16 animate-float opacity-8">
+          <Building2 className="h-32 w-32 text-primary/20" />
+        </div>
+        <div className="absolute bottom-16 left-16 animate-float-diagonal opacity-8">
+          <Landmark className="h-28 w-28 text-secondary/20" />
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Badge className="bg-accent text-accent-foreground mb-4">Why Choose TechAira</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
