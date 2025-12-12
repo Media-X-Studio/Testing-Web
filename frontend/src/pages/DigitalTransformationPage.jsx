@@ -151,8 +151,16 @@ export const DigitalTransformationPage = () => {
       </section>
 
       {/* Four Pillars */}
-      <section className="py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 relative pattern-diagonal">
+        {/* Technology & Government Background */}
+        <div className="absolute top-20 right-1/4 animate-float-slow opacity-8">
+          <Network className="h-28 w-28 text-primary/12" />
+        </div>
+        <div className="absolute bottom-20 left-1/4 animate-float-diagonal opacity-8">
+          <Building2 className="h-32 w-32 text-secondary/12" />
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               Our Comprehensive Framework
