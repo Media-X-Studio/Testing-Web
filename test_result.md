@@ -315,6 +315,21 @@ frontend:
         - agent: "testing"
         - comment: "✅ Mobile responsive design working perfectly: Mobile navigation accessible, responsive layouts across all pages, animations optimized for mobile devices. All floating elements and hover effects adapt well to mobile viewport (390x844 tested)."
 
+  - task: "Contact Us CTA Button Visibility Fix"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/pages/HomePage.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "NEW FIX: Test Contact Us CTA button visibility on homepage hero section. Verify both 'Explore Our Solutions' (accent/teal) and 'Contact Us' (secondary/teal background) buttons are clearly visible, text readable before hover, hover effects working, and navigation functional."
+        - working: true
+        - agent: "testing"
+        - comment: "✅ CONTACT US CTA BUTTON VISIBILITY FIX WORKING PERFECTLY: Both CTA buttons are clearly visible and functional in hero section. 'Explore Our Solutions' button has correct accent variant (teal), 'Contact Us' button has teal background with white text that's readable before hover. Hover effects working with scale transforms and shadows. Navigation confirmed - Contact Us → /contact, Explore → /solutions/evisa. Minor: Contact Us uses 'gradient-primary' instead of 'secondary' variant but achieves same visual result with excellent visibility."
+
 metadata:
   created_by: "testing_agent"
   version: "1.0"
