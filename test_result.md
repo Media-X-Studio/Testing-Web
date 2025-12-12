@@ -348,7 +348,7 @@ frontend:
 metadata:
   created_by: "testing_agent"
   version: "1.0"
-  test_sequence: 2
+  test_sequence: 3
   run_ui: true
   last_tested: "2024-12-12"
   test_status: "completed"
