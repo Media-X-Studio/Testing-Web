@@ -183,7 +183,10 @@ export const Navigation = () => {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-base">Services</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className={cn(
+                    'text-base',
+                    isScrolled ? 'text-foreground' : 'text-primary-foreground font-medium'
+                  )}>Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[700px] gap-3 p-4 md:grid-cols-2">
                       {services.map((service) => (
