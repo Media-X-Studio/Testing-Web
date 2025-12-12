@@ -156,20 +156,45 @@ export const HomePage = () => {
           <div className="absolute inset-0 gradient-hero opacity-90" />
         </div>
 
-        {/* Floating Animated Shapes */}
+        {/* Floating Animated Shapes with Travel Theme */}
         <div className="floating-shape floating-shape-1 gradient-primary rounded-full animate-blob" />
         <div className="floating-shape floating-shape-2 gradient-secondary rounded-full animate-blob" style={{ animationDelay: '2s' }} />
         <div className="floating-shape floating-shape-3 gradient-primary rounded-full animate-blob" style={{ animationDelay: '4s' }} />
+        
+        {/* Additional Travel-themed Background Shapes */}
+        <div className="absolute top-40 left-1/4 w-40 h-40 bg-accent/10 rounded-lg animate-float-slow blur-3xl" />
+        <div className="absolute bottom-40 right-1/4 w-48 h-48 bg-secondary/10 rounded-lg animate-float-diagonal blur-3xl" style={{ animationDelay: '1s' }} />
 
-        {/* Floating Icons */}
-        <div className="absolute top-20 left-10 animate-float-slow opacity-20">
-          <Shield className="h-16 w-16 text-primary-foreground" />
+        {/* Travel & Immigration Related Floating Icons */}
+        <div className="absolute top-20 left-10 animate-float-slow opacity-15">
+          <Plane className="h-16 w-16 text-primary-foreground transform rotate-45" />
         </div>
         <div className="absolute top-32 right-20 animate-float-diagonal opacity-20" style={{ animationDelay: '1s' }}>
           <Globe className="h-20 w-20 text-primary-foreground" />
         </div>
-        <div className="absolute bottom-32 left-20 animate-float opacity-20" style={{ animationDelay: '2s' }}>
-          <Zap className="h-12 w-12 text-primary-foreground" />
+        <div className="absolute bottom-32 left-20 animate-float opacity-15" style={{ animationDelay: '2s' }}>
+          <FileText className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute top-1/2 left-12 animate-float-diagonal opacity-15" style={{ animationDelay: '3s' }}>
+          <Fingerprint className="h-12 w-12 text-primary-foreground" />
+        </div>
+        <div className="absolute top-1/3 right-16 animate-float-slow opacity-20" style={{ animationDelay: '2.5s' }}>
+          <CreditCard className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-40 right-32 animate-float opacity-15" style={{ animationDelay: '4s' }}>
+          <MapPin className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute top-2/3 left-32 animate-float-diagonal opacity-15" style={{ animationDelay: '1.5s' }}>
+          <Building2 className="h-18 w-18 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-1/4 left-1/3 animate-float-slow opacity-15" style={{ animationDelay: '3.5s' }}>
+          <Briefcase className="h-12 w-12 text-primary-foreground" />
+        </div>
+        <div className="absolute top-1/4 right-1/3 animate-float opacity-20" style={{ animationDelay: '2.8s' }}>
+          <Shield className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-20 left-1/2 animate-float-diagonal opacity-15" style={{ animationDelay: '0.8s' }}>
+          <Map className="h-16 w-16 text-primary-foreground" />
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
