@@ -151,8 +151,16 @@ export const CustomersPage = () => {
       </section>
 
       {/* Client Logos */}
-      <section className="py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 relative pattern-grid">
+        {/* World Map Theme Background */}
+        <div className="absolute top-1/4 left-1/4 animate-float opacity-8">
+          <Globe className="h-32 w-32 text-primary/10" />
+        </div>
+        <div className="absolute bottom-1/4 right-1/4 animate-float-diagonal opacity-8">
+          <MapPin className="h-28 w-28 text-accent/10" />
+        </div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
               Our Valued Partners
