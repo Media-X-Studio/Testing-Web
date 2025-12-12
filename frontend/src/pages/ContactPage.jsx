@@ -38,16 +38,35 @@ export const ContactPage = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-24 gradient-hero overflow-hidden">
-        {/* Floating Shapes */}
+        {/* Travel & Communication Background Shapes */}
         <div className="floating-shape floating-shape-1 gradient-primary rounded-full animate-blob" />
         <div className="floating-shape floating-shape-2 gradient-secondary rounded-full animate-blob" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/3 right-1/4 w-44 h-44 bg-accent/10 rounded-lg animate-float-slow blur-3xl" />
         
-        {/* Floating Icons */}
-        <div className="absolute top-20 left-10 animate-float opacity-20">
+        {/* Floating Communication & Travel Icons */}
+        <div className="absolute top-20 left-10 animate-float opacity-15">
           <Mail className="h-16 w-16 text-primary-foreground" />
         </div>
         <div className="absolute bottom-20 right-10 animate-float-diagonal opacity-20">
           <Phone className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute top-32 right-20 animate-float-slow opacity-15" style={{ animationDelay: '1s' }}>
+          <Plane className="h-16 w-16 text-primary-foreground transform rotate-45" />
+        </div>
+        <div className="absolute bottom-32 left-16 animate-float-diagonal opacity-15" style={{ animationDelay: '2s' }}>
+          <Globe className="h-18 w-18 text-primary-foreground" />
+        </div>
+        <div className="absolute top-1/2 left-24 animate-float opacity-15" style={{ animationDelay: '1.5s' }}>
+          <Building2 className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-1/3 right-24 animate-float-slow opacity-15" style={{ animationDelay: '2.5s' }}>
+          <FileText className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute top-2/3 right-1/3 animate-float-diagonal opacity-15" style={{ animationDelay: '3s' }}>
+          <Landmark className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-2/3 left-1/3 animate-float opacity-15" style={{ animationDelay: '0.8s' }}>
+          <Briefcase className="h-12 w-12 text-primary-foreground" />
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
