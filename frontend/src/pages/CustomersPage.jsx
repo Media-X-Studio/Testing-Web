@@ -79,7 +79,9 @@ export const CustomersPage = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative py-24 gradient-hero overflow-hidden">
+      <section className="relative py-24 overflow-hidden">
+        {/* Two-Color Brand Background */}
+        <div className="absolute inset-0 gradient-hero" />
         {/* Global Government Theme Background Shapes */}
         <div className="absolute top-10 left-10 w-64 h-64 bg-accent/10 rounded-full animate-blob blur-3xl" />
         <div className="absolute bottom-10 right-10 w-72 h-72 bg-secondary/10 rounded-full animate-blob blur-3xl" style={{ animationDelay: '3s' }} />
