@@ -259,8 +259,12 @@ export const HomePage = () => {
       </section>
 
       {/* Overview Section */}
-      <section className="py-24 fade-in-section">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 fade-in-section relative pattern-dots">
+        {/* Subtle Travel Background Elements */}
+        <div className="absolute top-10 right-10 w-32 h-32 bg-secondary/5 rounded-full blur-2xl animate-float-slow" />
+        <div className="absolute bottom-10 left-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl animate-float-diagonal" />
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <Badge className="bg-primary text-primary-foreground">About TechAira</Badge>
