@@ -287,30 +287,30 @@ export const HomePage = () => {
               return (
                 <Card
                   key={index}
-                  className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                  className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover-tilt hover-shine relative"
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={solution.image}
                       alt={solution.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-2 transition-all duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-90" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-300" />
                     <div className="absolute bottom-4 left-4">
-                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-primary">
+                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-primary group-hover:scale-125 group-hover:rotate-12 group-hover:shadow-xl transition-all duration-300 animate-pulse-glow">
                         <Icon className="h-6 w-6 text-primary-foreground" />
                       </div>
                     </div>
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-xl">{solution.title}</CardTitle>
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">{solution.title}</CardTitle>
                     <CardDescription className="text-base">{solution.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Link to={solution.link}>
-                      <Button variant="ghost" className="group/btn">
+                      <Button variant="ghost" className="group/btn hover-pop">
                         Learn More
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-2 transition-transform" />
                       </Button>
                     </Link>
                   </CardContent>
