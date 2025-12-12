@@ -105,16 +105,36 @@ export const DigitalTransformationPage = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-24 gradient-hero overflow-hidden">
-        {/* Floating Animated Shapes */}
+        {/* Digital Government Background Shapes */}
         <div className="floating-shape floating-shape-1 gradient-secondary rounded-full animate-blob" />
         <div className="floating-shape floating-shape-2 gradient-primary rounded-full animate-blob" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-1/4 left-1/4 w-52 h-52 bg-accent/10 rounded-lg animate-float blur-3xl" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-secondary/10 rounded-full animate-float-diagonal blur-3xl" style={{ animationDelay: '2s' }} />
         
-        {/* Floating Icons */}
-        <div className="absolute top-20 right-10 animate-float-slow opacity-20">
+        {/* Floating Digital Government Icons */}
+        <div className="absolute top-20 right-10 animate-float-slow opacity-15">
           <Cpu className="h-16 w-16 text-primary-foreground" />
         </div>
         <div className="absolute bottom-20 left-10 animate-float-diagonal opacity-20">
           <Database className="h-20 w-20 text-primary-foreground" />
+        </div>
+        <div className="absolute top-28 left-16 animate-float opacity-15" style={{ animationDelay: '1s' }}>
+          <Building2 className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-28 right-16 animate-float-slow opacity-15" style={{ animationDelay: '2s' }}>
+          <Globe className="h-18 w-18 text-primary-foreground" />
+        </div>
+        <div className="absolute top-1/2 left-20 animate-float-diagonal opacity-15" style={{ animationDelay: '1.5s' }}>
+          <FileText className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-1/3 right-20 animate-float opacity-15" style={{ animationDelay: '2.5s' }}>
+          <Shield className="h-14 w-14 text-primary-foreground" />
+        </div>
+        <div className="absolute top-2/3 right-1/3 animate-float-slow opacity-15" style={{ animationDelay: '3s' }}>
+          <Landmark className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute top-1/3 left-1/3 animate-float-diagonal opacity-15" style={{ animationDelay: '0.8s' }}>
+          <Network className="h-14 w-14 text-primary-foreground" />
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
