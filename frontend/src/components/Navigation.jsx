@@ -159,7 +159,7 @@ export const Navigation = () => {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(
                     'text-base',
-                    isScrolled ? 'text-foreground' : 'text-primary-foreground font-medium'
+                    isScrolled ? 'text-foreground' : 'text-white font-medium'
                   )}>Solutions</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-2">
