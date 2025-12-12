@@ -38,9 +38,21 @@ export const ContactPage = () => {
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="relative py-24 gradient-hero overflow-hidden">
+        {/* Floating Shapes */}
+        <div className="floating-shape floating-shape-1 gradient-primary rounded-full animate-blob" />
+        <div className="floating-shape floating-shape-2 gradient-secondary rounded-full animate-blob" style={{ animationDelay: '2s' }} />
+        
+        {/* Floating Icons */}
+        <div className="absolute top-20 left-10 animate-float opacity-20">
+          <Mail className="h-16 w-16 text-primary-foreground" />
+        </div>
+        <div className="absolute bottom-20 right-10 animate-float-diagonal opacity-20">
+          <Phone className="h-14 w-14 text-primary-foreground" />
+        </div>
+        
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-fadeInUp">
-            <Badge className="bg-accent text-accent-foreground">Contact Us</Badge>
+            <Badge className="bg-accent text-accent-foreground hover-pop cursor-pointer">Contact Us</Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
               Let's Transform Your Government Operations
             </h1>
