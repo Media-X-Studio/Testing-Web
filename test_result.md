@@ -360,6 +360,21 @@ test_plan:
   test_all: false
   test_priority: "high_first"
 
+  - task: "Hero Section Background Image Blue Trace Fix"
+    implemented: true
+    working: false
+    file: "/app/frontend/src/pages/solutions/SolutionTemplate.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: "NA"
+        - agent: "testing"
+        - comment: "NEW FIX TESTING: Test hero section background image fix to verify blue traces/tints have been removed. Check homepage hero, About page CTA, and solution pages for grayscale backgrounds with red/blue-grey gradient overlays."
+        - working: false
+        - agent: "testing"
+        - comment: "❌ PARTIAL FIX: Homepage and About page hero sections working perfectly with grayscale backgrounds (opacity 0.15) and proper gradient overlays (opacity 0.95). Brand colors verified correct (Primary: 353 47% 28%, Secondary: 216 6% 28%). Text readability excellent with white text on gradient backgrounds. ISSUE FOUND: Solution pages missing grayscale class on hero images - SolutionTemplate.jsx line 26 needs 'grayscale' class added to background image. All other areas successfully fixed with no blue traces detected."
+
 agent_communication:
     - agent: "testing"
     - message: "Starting comprehensive testing of TechAira government website. Will test navigation, forms, animations, and responsive design across all pages."
@@ -373,3 +388,5 @@ agent_communication:
     - message: "✅ CONTACT US CTA BUTTON VISIBILITY TEST COMPLETED: Comprehensive testing of homepage hero section CTA buttons completed successfully. Key findings: 1) Both buttons are clearly visible and functional - 'Explore Our Solutions' (accent/teal) and 'Contact Us' buttons present. 2) Button text is readable BEFORE hover with proper contrast (white text on teal background). 3) Hover effects working perfectly with scale transforms and shadow effects. 4) Navigation functionality confirmed - Contact Us navigates to /contact, Explore navigates to /solutions/evisa. 5) Minor styling discrepancy: Contact Us button uses 'gradient-primary' variant instead of 'secondary' variant, but still has teal background and excellent visibility. The fix is working as intended - Contact Us button is now clearly visible and functional."
     - agent: "testing"
     - message: "🎯 TECHAIRA REBRANDING TEST COMPLETED SUCCESSFULLY: Comprehensive testing of new logo and color scheme implementation completed across all pages. Key findings: 1) Logo Implementation: ✅ TechAira red 'TA' logo correctly implemented in both navigation header and footer with proper hover effects. 2) Primary Red Color (#6b242a): ✅ Successfully implemented in buttons, icons, hover effects, and gradients throughout the site. 3) Secondary Blue-Grey (#44474e): ✅ Properly used for navigation elements and secondary components. 4) Gradient Implementation: ✅ Hero section and cards use new brand color gradients (red to blue-grey). 5) Cross-Page Consistency: ✅ All pages (Home, About, Contact, Customers) consistently use new branding. 6) Mobile Responsive: ✅ New colors and logo work perfectly on mobile devices with functional mobile menu. 7) Interactive Elements: ✅ All hover effects, card animations, and button interactions properly display new brand colors. 8) Professional Appearance: ✅ The rebranding maintains professional government-focused aesthetic while establishing strong TechAira brand identity. The complete rebranding is successfully implemented and ready for production use."
+    - agent: "testing"
+    - message: "🎯 HERO SECTION BACKGROUND IMAGE FIX TESTING COMPLETED: Comprehensive testing of blue trace removal from hero section backgrounds completed. Key findings: 1) ✅ Homepage Hero: Background image has grayscale class applied, opacity 0.15, gradient overlay working perfectly with brand colors. 2) ✅ About Page CTA: Background image properly grayscaled, gradient overlay functioning correctly. 3) ❌ Solution Pages: Missing grayscale class on hero images in SolutionTemplate.jsx - needs 'grayscale' class added to line 26. 4) ✅ Brand Colors: Primary (353 47% 28%) and Secondary (216 6% 28%) colors verified correct. 5) ✅ Text Readability: White text clearly visible on gradient backgrounds. 6) ✅ No Blue Traces: No blue tints detected on fixed pages. The fix is 95% complete - only solution pages need the grayscale class added to complete the blue trace removal."
