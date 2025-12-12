@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { Target, Eye, Award, Users, Globe, Shield, ArrowRight } from 'lucide-react';
+import { Target, Eye, Award, Users, Globe, Shield, ArrowRight, Plane, Building2, FileText, Landmark, MapPin, CreditCard } from 'lucide-react';
 
 const values = [
   {
