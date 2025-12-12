@@ -264,14 +264,8 @@ export const AboutPage = () => {
       <section className="py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="border-0 shadow-2xl overflow-hidden relative">
-            <div className="absolute inset-0">
-              <img
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
-                alt="Digital Transformation"
-                className="w-full h-full object-cover opacity-15 grayscale"
-              />
-              <div className="absolute inset-0 gradient-hero opacity-95" />
-            </div>
+            {/* Two-Color Brand Background */}
+            <div className="absolute inset-0 gradient-hero" />
             <CardContent className="p-12 sm:p-16 text-center relative z-10">
               <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground mb-6">
                 Learn About Our Digital Transformation Approach
