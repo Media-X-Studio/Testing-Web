@@ -149,11 +149,11 @@ export const HomePage = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1644325349124-d1756b79dd42?crop=entropy&cs=srgb&fm=jpg&q=85"
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
             alt="Digital Transformation"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-15 grayscale"
           />
-          <div className="absolute inset-0 gradient-hero opacity-90" />
+          <div className="absolute inset-0 gradient-hero opacity-95" />
         </div>
 
         {/* Floating Animated Shapes with Travel Theme */}
