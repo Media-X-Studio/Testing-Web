@@ -109,8 +109,8 @@ export const Navigation = () => {
                 variant="ghost"
                 className={cn(
                   'text-base',
-                  isScrolled ? 'text-foreground' : 'text-primary-foreground font-medium',
-                  location.pathname === '/' && 'text-primary'
+                  isScrolled ? 'text-foreground' : 'text-white font-medium',
+                  location.pathname === '/' && (isScrolled ? 'text-primary' : 'text-white')
                 )}
               >
                 Home
@@ -122,7 +122,7 @@ export const Navigation = () => {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className={cn(
                     'text-base',
-                    isScrolled ? 'text-foreground' : 'text-primary-foreground font-medium'
+                    isScrolled ? 'text-foreground' : 'text-white font-medium'
                   )}>About</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4">
