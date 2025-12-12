@@ -355,12 +355,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Travel-Themed Floating Icons on Home Page"
-    - "Travel-Themed Background Patterns"
-    - "About Page Travel Icons"
-    - "Digital Transformation Travel Icons"
-    - "Customers Page Travel Icons"
-    - "Contact Page Travel Icons"
+    - "TechAira Rebranding - Logo and Color Scheme Implementation"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
