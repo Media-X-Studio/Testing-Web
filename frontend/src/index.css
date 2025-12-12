@@ -6,24 +6,24 @@
 
 @layer base {
   :root {
-    /* Government Tech Color Palette - Professional Trust-Based Design */
-    --background: 210 20% 98%;
-    --foreground: 220 20% 15%;
+    /* TechAira Brand Color Palette - Red & Blue-Grey */
+    --background: 0 0% 98%;
+    --foreground: 216 6% 28%;
     
-    /* Primary - Navy Blue (Trust, Security, Authority) */
-    --primary: 215 75% 35%;
-    --primary-foreground: 210 20% 98%;
-    --primary-hover: 215 75% 30%;
+    /* Primary - TechAira Red (Brand Color, CTAs) */
+    --primary: 353 47% 28%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 353 47% 23%;
     
-    /* Secondary - Teal Accent (Modern, Trustworthy, Tech-Forward) */
-    --secondary: 180 60% 45%;
-    --secondary-foreground: 210 20% 98%;
-    --secondary-hover: 180 60% 40%;
+    /* Secondary - TechAira Blue-Grey (Professional, Authority) */
+    --secondary: 216 6% 28%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-hover: 216 6% 23%;
     
-    /* Accent - Vibrant Teal (CTAs, Highlights) */
-    --accent: 180 65% 50%;
-    --accent-foreground: 210 20% 98%;
-    --accent-hover: 180 65% 45%;
+    /* Accent - Lighter Red (Highlights, Hover States) */
+    --accent: 353 47% 35%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 353 47% 30%;
     
     /* Muted - Professional Gray */
     --muted: 215 20% 93%;
