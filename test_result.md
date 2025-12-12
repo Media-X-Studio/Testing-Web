@@ -227,15 +227,18 @@ frontend:
 
   - task: "Customers Page Travel Icons"
     implemented: true
-    working: "NA"
+    working: false
     file: "/app/frontend/src/pages/CustomersPage.jsx"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
         - agent: "testing"
         - comment: "NEW FEATURE: Need to test travel-themed floating icons on Customers page (Globe, Plane, Landmark, Building2, FileText, Fingerprint, CreditCard, MapPin) with appropriate animations"
+        - working: false
+        - agent: "testing"
+        - comment: "❌ PARTIAL IMPLEMENTATION: Found 5/8 travel icons on Customers page (Globe, Plane, Landmark, Building2, Fingerprint). Missing: FileText, CreditCard, MapPin. Existing icons have proper animations and global government theme."
 
   - task: "Contact Page Travel Icons"
     implemented: true
