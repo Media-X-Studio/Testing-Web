@@ -100,10 +100,16 @@ export const CustomersPage = () => {
             {stats.map((stat, index) => {
               const Icon = stat.icon;
               return (
-                <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <Card 
+                  key={index} 
+                  className="text-center border-0 shadow-lg hover-lift hover-glow group cursor-pointer"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
                   <CardContent className="pt-6 pb-6 space-y-3">
-                    <Icon className="h-10 w-10 text-primary mx-auto" />
-                    <p className="text-4xl font-bold text-foreground">{stat.value}</p>
+                    <div className="inline-block animate-float" style={{ animationDelay: `${index * 0.5}s` }}>
+                      <Icon className="h-10 w-10 text-primary group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" />
+                    </div>
+                    <p className="text-4xl font-bold text-foreground group-hover:scale-110 group-hover:text-primary transition-all duration-300">{stat.value}</p>
                     <p className="text-sm text-muted-foreground">{stat.label}</p>
                   </CardContent>
                 </Card>
