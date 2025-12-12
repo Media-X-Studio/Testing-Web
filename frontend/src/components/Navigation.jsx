@@ -120,7 +120,10 @@ export const Navigation = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-base">About</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className={cn(
+                    'text-base',
+                    isScrolled ? 'text-foreground' : 'text-primary-foreground font-medium'
+                  )}>About</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4">
                       <li>
