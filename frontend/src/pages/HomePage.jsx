@@ -337,13 +337,14 @@ export const HomePage = () => {
               return (
                 <div
                   key={index}
-                  className="text-center space-y-4 p-6 rounded-xl hover:bg-muted transition-all duration-300 group"
+                  className="text-center space-y-4 p-6 rounded-xl hover:bg-muted transition-all duration-300 group hover-lift cursor-pointer"
+                  style={{ animationDelay: `${index * 0.15}s` }}
                 >
-                  <div className="w-16 h-16 gradient-primary rounded-xl flex items-center justify-center mx-auto shadow-primary group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
-                    <Icon className="h-8 w-8 text-primary-foreground" />
+                  <div className="w-16 h-16 gradient-primary rounded-xl flex items-center justify-center mx-auto shadow-primary group-hover:shadow-2xl group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-float">
+                    <Icon className="h-8 w-8 text-primary-foreground group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                  <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300">{benefit.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">{benefit.description}</p>
                 </div>
               );
             })}
