@@ -400,8 +400,10 @@ export const HomePage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 gradient-hero fade-in-section">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 relative fade-in-section overflow-hidden">
+        {/* Two-Color Brand Background */}
+        <div className="absolute inset-0 gradient-hero" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="bg-accent text-accent-foreground mb-8">Client Success Stories</Badge>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-16">
