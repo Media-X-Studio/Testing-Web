@@ -23,9 +23,9 @@ export const SolutionTemplate = ({
           <img
             src={heroImage}
             alt={title}
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-15 grayscale"
           />
-          <div className="absolute inset-0 gradient-hero opacity-90" />
+          <div className="absolute inset-0 gradient-hero opacity-95" />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6 animate-fadeInUp">
