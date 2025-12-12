@@ -157,21 +157,36 @@ export const AboutPage = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden group">
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div key={index} className="card-flip h-96" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="card-flip-inner h-full">
+                  {/* Front */}
+                  <Card className="card-flip-front border-0 shadow-xl overflow-hidden h-full">
+                    <div className="relative h-full">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 className="text-xl font-semibold text-foreground mb-1">{member.name}</h3>
+                        <p className="text-sm font-medium text-primary">{member.role}</p>
+                      </div>
+                    </div>
+                  </Card>
+                  {/* Back */}
+                  <Card className="card-flip-back border-0 shadow-xl overflow-hidden h-full gradient-primary">
+                    <CardContent className="p-6 h-full flex flex-col justify-center items-center text-center space-y-4">
+                      <div className="w-16 h-16 bg-primary-foreground/20 rounded-full flex items-center justify-center">
+                        <Users className="h-8 w-8 text-primary-foreground" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-primary-foreground">{member.name}</h3>
+                      <p className="text-sm font-medium text-primary-foreground/90">{member.role}</p>
+                      <p className="text-sm text-primary-foreground/80 leading-relaxed">{member.bio}</p>
+                    </CardContent>
+                  </Card>
                 </div>
-                <CardContent className="p-6 space-y-2">
-                  <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
-                  <p className="text-sm font-medium text-primary">{member.role}</p>
-                  <p className="text-sm text-muted-foreground">{member.bio}</p>
-                </CardContent>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
