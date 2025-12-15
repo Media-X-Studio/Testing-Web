@@ -146,8 +146,15 @@ export const HomePage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        {/* Two-Color Brand Background */}
-        <div className="absolute inset-0 z-0 gradient-hero" />
+        {/* Background Image with Brand Gradient Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
+            alt="Digital Transformation Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 gradient-hero opacity-90" />
+        </div>
 
         {/* Floating Animated Shapes with Travel Theme */}
         <div className="floating-shape floating-shape-1 gradient-primary rounded-full animate-blob" />
